@@ -1,4 +1,4 @@
-# Oefeningen labo 14
+# Oefeningen uitleg labo 14
 
 Zorg dat je de volgende folder structuur volgt:
 
@@ -8,8 +8,8 @@ webtechnologie/
 │  ├─ oefening-01/
 │  │  ├─ index.html
 │  │  ├─ images/
-│  │  │  ├─ image-1.jpg 
-│  │  │  └─ image-n.jpg 
+│  │  │  ├─ image-1.jpg
+│  │  │  └─ image-n.jpg
 │  │  ├─ css/
 │  │  │   ├─ reset.css
 │  │  │   └─ style.css
@@ -18,7 +18,7 @@ webtechnologie/
 │  ├─ oefening-02/
 │  └─ oefening-n/
 ├─ labo-02/
-└─ labo-n/      
+└─ labo-n/
 ```
 
 - Gebruik steeds JS modules om globale variabelen te vermijden (`<script type="module" src="./path/to/script.js" defer></script>`)
@@ -44,8 +44,8 @@ Schrijf JavaScript dat:
 2. Controleert dat naam en achternaam niet leeg zijn.
 3. Controleert dat de leeftijd tussen 12 en 60 jaar ligt.
 4. Geeft passende meldingen bij ongeldige invoer:
-    - **Naam/Achternaam ontbreekt:** "Vul zowel voornaam als achternaam in!"
-    - **Leeftijd niet tussen 12 en 60:** "U behoort niet tot de gezochte leeftijdsklasse!"
+   - **Naam/Achternaam ontbreekt:** "Vul zowel voornaam als achternaam in!"
+   - **Leeftijd niet tussen 12 en 60:** "U behoort niet tot de gezochte leeftijdsklasse!"
 5. Vormt de boodschap correct en toont deze met `console.log()`.
 
 > **TIP**: de prompt-functie zal altijd een string teruggeven, aan jou om deze input om te zetten naar een geheel nummer mbhv. de parseInt functie.
@@ -64,8 +64,8 @@ Het programma vraagt de gebruiker om een jaartal en jouw programma bepaalt of he
 
 1. Vraag een gebruiker om een jaartal met de prompt-functie.
 2. Het programma bepaalt of het een schrikkeljaar is volgens de regels:
-    - Een jaar is een schrikkeljaar als het deelbaar is door **4**,
-    - Behalve als het deelbaar is door **100**, tenzij het ook deelbaar is door **400**.
+   - Een jaar is een schrikkeljaar als het deelbaar is door **4**,
+   - Behalve als het deelbaar is door **100**, tenzij het ook deelbaar is door **400**.
 3. Zet volgende flowchart om in code: ![flowchart](./flowchart-schrikkeljaar.png)
 
 ## Oefening 3: Simpele Rekenmachine (if-statements)
@@ -119,67 +119,76 @@ Het programma simuleert een klok die een tijdstip berekent na optelling van een 
 1. De gebruiker voert een **startuur** en **startminuten** in.
 2. Twee extra variabelen bevatten de uren en minuten die moeten worden opgeteld.
 3. Bereken het nieuwe tijdstip:
-    - **Minuten overschrijden 60?** → Tel extra uren op.
-    - **Uren overschrijden 24?** → Bereken hoeveel dagen erbij komen.
+   - **Minuten overschrijden 60?** → Tel extra uren op.
+   - **Uren overschrijden 24?** → Bereken hoeveel dagen erbij komen.
 4. Geef de output correct weer:
-    - "Dit tijdstip valt nog op dezelfde dag."
-    - "Dit is het tijdstip **1 dag later**."
-    - "Dit is het tijdstip **X dagen later**."
+   - "Dit tijdstip valt nog op dezelfde dag."
+   - "Dit is het tijdstip **1 dag later**."
+   - "Dit is het tijdstip **X dagen later**."
 
 > **TIP**: Gebruik **modulo (`%`)** en `Math.floor()` voor de berekening.
 
 ## Oefening 6: Cijfer omzetten naar tekst
 
 ### Leerdoelen
+
 - Switch-statements
 - Beslissingen
 
 ### Functionele analyse
+
 Een student krijgt een cijfer (0-10). Het programma zet dit cijfer om in een tekstuele beoordeling.
 
 ### Technische analyse
-- Vraag een gebruiker om een cijfer tussen de 0 en 10 in te voeren via de prompt-functie 
+
+- Vraag een gebruiker om een cijfer tussen de 0 en 10 in te voeren via de prompt-functie
 - Gebruik een switch-statement om het cijfer om te zetten naar:
-    - 0-2: "Zeer slecht"
-    - 3-4: "Onvoldoende"
-    - 5-6: "Voldoende"
-    - 7-8: "Goed"
-    - 9-10: "Uitstekend"
+  - 0-2: "Zeer slecht"
+  - 3-4: "Onvoldoende"
+  - 5-6: "Voldoende"
+  - 7-8: "Goed"
+  - 9-10: "Uitstekend"
 - Als het cijfer buiten de 0-10 range ligt, geef dan een foutmelding.
 - Toon het resultaat in de console.
 
 ## Oefening 7: Omrekenen van graden
 
 ### Leerdoelen
+
 - Functies
 - Rekenkundige operaties
 
 ### Functionele analyse
+
 Schrijf een programma dat temperaturen kan omrekenen tussen Celsius en Fahrenheit.
 
 ### Technische analyse
+
 - Vraag de gebruiker om een temperatuur en een eenheid (C of F).
 - Gebruik een functie die:
-    - Celsius omzet naar Fahrenheit met de formule: (C × 9/5) + 32
-    - Fahrenheit omzet naar Celsius met de formule: (F - 32) × 5/9
+  - Celsius omzet naar Fahrenheit met de formule: (C × 9/5) + 32
+  - Fahrenheit omzet naar Celsius met de formule: (F - 32) × 5/9
 - Toon de omgezette waarde in de console.
 - Geef een foutmelding als de eenheid niet correct is ingevoerd.
 
 ## Oefening 8: Getal raden
 
 ### Leerdoelen
+
 - Beslissingen
 - Willekeurige getallen
 
 ### Functionele analyse
+
 **Kies** zelf een getal tussen 1 en 10 en sla het op in een variabele `answer`. De gebruiker moet raden welk getal het is.
 
 ### Technische analyse
+
 - Genereer een willekeurig getal tussen 1 en 10.
 - Vraag de gebruiker om een gok met behulp van de prompt-functie.
 - Controleer of het getal juist is:
-    - Zo ja, toon: "Gefeliciteerd, je hebt het juiste getal geraden!"
-    - Zo nee, toon: "Helaas, het juiste getal was X."
+  - Zo ja, toon: "Gefeliciteerd, je hebt het juiste getal geraden!"
+  - Zo nee, toon: "Helaas, het juiste getal was X."
 - Toon het resultaat in de console.
 
 > **Tip**: Om een willekeurig getal te genereren kun je gebruik maken van de `Math.random()` functie. Deze functie zal altijd een kommagetal tussen 0 en 1 teruggeven (soms exact 0, maar nooit exact 1). Met de volgende functie kun je dit willekeurig kommagetal omzetten naar een geheel getal tussen twee getallen: `Math.floor(Math.random() * (maximumGetal - minimumGetal) + minimumGetal)`.
@@ -285,4 +294,3 @@ Je programma telt af vanaf een hardcoded startwaarde tot nul en print bij elke s
 - Gebruik een while-loop om af te tellen.
 - Print bij elke iteratie het huidige getal.
 - Stop zodra het getal nul bereikt.
-
